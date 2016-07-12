@@ -7,7 +7,7 @@
 
 	function routeHelperProvider($routeProvider, $locationProvider) {
 		$routeHelperProvider
-			.when('/login/', {
+			.when('login/', {
 				templateUrl: './login/login.html',
 				controller: 'loginCtrl'
 			})
