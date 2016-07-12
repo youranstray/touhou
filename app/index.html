@@ -13,27 +13,26 @@
 	<script type="text/javascript" src="/libs/angular/angular.min.js"></script>
 	<script type="text/javascript" src="/libs/angular-route/angular-route.min.js"></script>
 	<script type="text/javascript" src="/app/app.js"></script>
+	<script type="text/javascript" src="/app/router.js"></script>
+
 	<script type="text/javascript">
     	angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
   	</script>
 </head>
 <body ng-app="touhou">
-	<!-- <p>test</p> -->
-	<div ng-controller="MainController">
-	    Choose:
-	    <a href="login">login</a>
+  <div ng-controller="MainController">
+    Choose:
+    <a href="login">Moby</a>
 
-	    <div ng-view></div>
+    <div ng-view></div>
 
-	    <hr />
+    <hr />
 
-	    <pre>$location.path() = {{$location.path()}}</pre>
-	    <pre>$route.current.templateUrl = {{$route.current.templateUrl}}</pre>
-	    <pre>$route.current.params = {{$route.current.params}}</pre>
-	    <pre>$route.current.scope.name = {{$route.current.scope.name}}</pre>
-	    <pre>$routeParams = {{$routeParams}}</pre>
-	</div>
-
-	
+    <pre>$location.path() = {{$location.path()}}</pre>
+    <pre>$route.current.templateUrl = {{$route.current.templateUrl}}</pre>
+    <pre>$route.current.params = {{$route.current.params}}</pre>
+    <pre>$route.current.scope.name = {{$route.current.scope.name}}</pre>
+    <pre>$routeParams = {{$routeParams}}</pre>
+  </div>
 </body>
 </html>

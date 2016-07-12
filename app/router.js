@@ -6,13 +6,22 @@
 		.config(routeHelperProvider);
 
 	function routeHelperProvider($routeProvider, $locationProvider) {
-		$routeHelperProvider
-			.when('login/', {
-				templateUrl: './login/login.html',
-				controller: 'loginCtrl'
-			})
+		$routeProvider
+		 .when('/login', {
+		    templateUrl: '/app/login/login.html',
+		    controller: 'Login',
+		    resolve: {
+		      // I will cause a 1 second delay
+		      delay: function($q, $timeout) {
+		        var delay = $q.defer();
+		        $timeout(delay.resolve, 1000);
+		        return delay.promise;
+		      }
+		    }
+		 });
 
-			$locationProvider.html5Mode(true);
+		// configure html5 to get links working on jsfiddle
+		$locationProvider.html5Mode(true);
 	}
 
 })();
