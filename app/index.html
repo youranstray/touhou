@@ -21,18 +21,9 @@
 </head>
 <body ng-app="touhou">
   <div ng-controller="MainController">
-    Choose:
-    <a href="login">Moby</a>
-
+    <a href="login">login</a>
     <div ng-view></div>
-
     <hr />
-
-    <pre>$location.path() = {{$location.path()}}</pre>
-    <pre>$route.current.templateUrl = {{$route.current.templateUrl}}</pre>
-    <pre>$route.current.params = {{$route.current.params}}</pre>
-    <pre>$route.current.scope.name = {{$route.current.scope.name}}</pre>
-    <pre>$routeParams = {{$routeParams}}</pre>
   </div>
 </body>
 </html>

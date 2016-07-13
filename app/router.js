@@ -19,6 +19,19 @@
 		      }
 		    }
 		 });
+		
+		/*$stateProvider
+		 .state('main', {
+		 	url: '/',
+		 	controller: 'MainController',
+		 	templateUrl: '/app/index.html'
+		 })
+		 .state('main.login', {
+		 	url: '/login',
+		 	controller: 'Login',
+		 	templateUrl: '/app/login/login.html'
+		 })*/
+
 
 		// configure html5 to get links working on jsfiddle
 		$locationProvider.html5Mode(true);

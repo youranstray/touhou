@@ -1,4 +1,4 @@
-(function(angular) {
+(function() {
  	'use strict';
 	angular.module('touhou', ['ngRoute'])
 
@@ -11,27 +11,8 @@
 	 .controller('Login', function($scope, $routeParams) {
 	     $scope.name = "Login";
 	     $scope.params = $routeParams;
-	 })
-
-	/*.config(function($routeProvider, $locationProvider) {
-	  $routeProvider
-	   .when('/login', {
-	    templateUrl: '/app/login/login.html',
-	    controller: 'Login',
-	    resolve: {
-	      // I will cause a 1 second delay
-	      delay: function($q, $timeout) {
-	        var delay = $q.defer();
-	        $timeout(delay.resolve, 1000);
-	        return delay.promise;
-	      }
-	    }
-	  });
-
-	  // configure html5 to get links working on jsfiddle
-	  $locationProvider.html5Mode(true);
-	});*/
-})(window.angular);
+	 });
+})();
 
 /*
 Copyright 2016 Google Inc. All Rights Reserved.

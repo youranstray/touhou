@@ -18,6 +18,6 @@
 		"underscore": "latest",
 		"angular": "latest",
 		"angular-route": "latest",
-		"bootstrap": "latest"
+		"angular-bootstrap": "latest"
 	}
 }
